@@ -9,7 +9,7 @@ from fastapi import FastAPI, HTTPException
 
 api = FastAPI()
 
-aoi.get("/")
+@api.get("/")
 async def home():
     return{"message": "Bienvenido a su cajero de confianza"}
 
